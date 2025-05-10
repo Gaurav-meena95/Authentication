@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../navar/page";
+import SingButton from "./compo/singButton";
 
 const Login = () => {
   return (
@@ -37,17 +38,7 @@ const Login = () => {
         </form>
 
         <div className="text-center my-4 text-gray-500">or</div>
-
-        <button
-          className="w-full flex items-center justify-center border py-2 rounded-lg bg-[#9f76b24b] hover:bg-gray-100 hover:text-gray-800"
-        >
-          <img
-            src="https://i.imghippo.com/files/wbei7195DUA.png"
-            alt="Google"
-            className="w-5 h-5 mr-2"
-          />
-          Sign up with Google
-        </button>
+        <SingButton/>
       </div>
     </div>
     </>
