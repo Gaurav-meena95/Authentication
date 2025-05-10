@@ -29,7 +29,7 @@ const SingButton = () => {
       <button
         onClick={handelGoogleSingUp}
         disabled={isloading}
-        className="w-full flex items-center justify-center border py-2 rounded-lg bg-[#9f76b24b] hover:bg-gray-100 hover:text-gray-800 disabled:opacity-50"
+        className="w-full flex items-center justify-center text-black  border py-2 rounded-lg bg-[#f2eef4] hover:bg-gray-300 transition hover:text-gray-950 disabled:opacity-50"
       >
         <img
           src="https://i.imghippo.com/files/wbei7195DUA.png"

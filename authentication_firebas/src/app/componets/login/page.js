@@ -7,7 +7,7 @@ const Login = () => {
     <>
       <Navbar />
           <div className="min-h-screen flex items-center justify-center bg-[#a78cb3fe]">
-      <div className="bg-[#dec1dff0] p-8 rounded-lg shadow-md w-full max-w-md">
+      <div className="bg-[#c1abc2f0] p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-3xl font-bold mb-6 text-center">Login to Necxis</h2>
         
         <form  className="space-y-4">
