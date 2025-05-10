@@ -1,5 +1,6 @@
+'use client'
 import Link from "next/link";
-import React, { use } from "react";
+import React from "react";
 import { useAuth } from "../../../../library/context";
 
 const Logout = () => {
