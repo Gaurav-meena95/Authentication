@@ -1,8 +1,11 @@
 "use client";
-import React from 'react';
+import React, { use, useEffect } from 'react';
 import { useAuth } from '../../../../../library/context';
 
+import { useRouter } from 'next/navigation';
+
 const SingButton = () => {
+  const router = useRouter();
   const { 
     user, 
     isloading, 
@@ -11,9 +14,18 @@ const SingButton = () => {
     handelLogout 
 
   } = useAuth();
+  useEffect(()=>{
+    if (user){
+      router.push('dashboard')
+    }
+  },[user,router])
 
+  if (isloading){
+    return <h1>Loading...</h1>
+  }
   return (
     <div>
+      {error && <p className='text-red-700'>{error}</p>}
       <button
         onClick={handelGoogleSingUp}
         disabled={isloading}
