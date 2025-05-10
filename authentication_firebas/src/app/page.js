@@ -1,9 +1,14 @@
-import Image from "next/image";
+
+import Footer from "./componets/footer/page";
+import Landing from "./componets/landing/page";
+import Navbar from "./componets/navar/page";
 
 export default function Home() {
   return (
-    <main className="bg-black">
-      <h1>Gaurav Meena</h1>
-    </main>
+    <>
+    <Navbar/>
+    <Landing/>
+    <Footer/>
+    </>
   );
 }
