@@ -1,7 +1,7 @@
 
-import Footer from "./componets/footer/page";
-import Landing from "./componets/landing/page";
-import Navbar from "./componets/navar/page";
+import Footer from "./components/footer/page";
+import Landing from "./components/landing/page";
+import Navbar from "./components/navar/page";
 
 export default function Home() {
   return (

@@ -8,7 +8,7 @@ const Navbar = ({ login }) => {
     <nav className="bg-[#654781] flex justify-between items-center px-8 py-5">
       <div className="">Necxis</div>
       <div className="">
-        <a className="mx-10  hover:underline underline-offset-5" href="/componets/landing">
+        <a className="mx-10  hover:underline underline-offset-5" href="/components/landing">
           Home
         </a>
         <a className="mx-10  hover:underline underline-offset-5" href="">

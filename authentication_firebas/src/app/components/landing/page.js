@@ -14,7 +14,7 @@ const Landing = () => {
           <img className="w-150" src="https://i.imghippo.com/files/bibH8472LAA.png" alt="" />
         </div>
 
-        <a href="/componets/login"
+        <a href="/components/login"
           className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition" >
           Get Started
         </a>
