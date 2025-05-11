@@ -10,7 +10,7 @@ const Dashbord = () => {
   
   function handelbutn(){
     handelLogout()
-    router.push('/login')
+    router.push('/componets/login')
   }
   return (
     <div>

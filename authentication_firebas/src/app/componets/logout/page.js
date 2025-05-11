@@ -8,14 +8,14 @@ const Logout = () => {
   return (
     <div>
       {!user && (
-        <Link href={"components/login"}>
+        <Link href={"/componets/login"}>
           <button className="bg-purple-500 p-1 px-5 rounded-lg border-none hover:bg-purple-700 transition hover:cursor-pointer ">
             Login
           </button>
         </Link>
       )}
       {user && (
-        <Link href={"/login"}>
+        <Link href={"/componets/login"}>
           <button onClick={handelLogout} className="bg-purple-500 p-1 px-5 rounded-lg border-none hover:bg-purple-700 transition hover:cursor-pointer ">
             Logout
           </button>
