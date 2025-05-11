@@ -2,11 +2,11 @@
   "name": "authentication_firebas",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-"dev": "next dev",
-  "build": "next build",
-  "export": "next export"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export"
+  },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@mui/material-nextjs": "^7.1.0",
@@ -23,5 +23,6 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
