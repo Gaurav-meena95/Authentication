@@ -18,20 +18,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Install dependencies
         run: |
           cd authentication_firebas
           npm install
 
-      - name: Build Next.js app
+      - name: Build project
         run: |
           cd authentication_firebas
           npm run build
@@ -41,7 +41,7 @@ jobs:
           cd authentication_firebas
           npm run export
 
-      - name: Upload artifact
+      - name: Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
           path: authentication_firebas/out
