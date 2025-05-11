@@ -1,4 +1,4 @@
-name: Deploy Next.js site to Pages
+name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
@@ -18,33 +18,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
+          cache: npm
 
       - name: Install dependencies
-        run: |
-          cd authentication_firebas
-          npm install
+        run: npm install
 
-      - name: Build project
+      - name: Build with Next.js
         run: |
-          cd authentication_firebas
           npm run build
-
-      - name: Export static site
-        run: |
-          cd authentication_firebas
           npm run export
 
-      - name: Upload static files
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: authentication_firebas/out
+          path: out
 
   deploy:
     needs: build
